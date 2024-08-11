@@ -58,7 +58,7 @@ async def on_message(message):
     user_message_history[message.author.id].append({"role": "user", "content": message.content})
 
     # Define system message
-    messages = [{"role": "system", "content": "You Judas Iscariot. Respond as the real Judas Iscariot would have in his time."}]
+    messages = [{"role": "system", "content": "You are Gen-Z Judas Iscariot. Respond like you are making a copy-pasta."}]
 
     # Add the user's message history to the messages list
     messages.extend(user_message_history[message.author.id])
